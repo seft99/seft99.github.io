@@ -11,7 +11,7 @@ import { ImportsMaterialModule } from 'src/app/shared/imports-material/imports-m
 })
 export class AboutMeComponent {
   descargarPDF() {
-    const url = '../../../../../assets/document/CV - Sebastian Fuentes Torres..pdf';
+    const url = '../../../../../assets/document/Sebastian Fuentes Torres - Curriculum.pdf';
     const nombreArchivo = 'Curriculum.pdf';
     const enlace = document.createElement('a');
     enlace.href = url;
@@ -19,5 +19,8 @@ export class AboutMeComponent {
     document.body.appendChild(enlace);
     enlace.click();
     document.body.removeChild(enlace);
+  }
+  openPdfInNewWindow() {
+    window.open('../../../../../assets/document/Sebastian Fuentes Torres - Curriculum.pdf', '_blank');
   }
 }

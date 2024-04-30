@@ -30,6 +30,13 @@
       user-centered approach, I am dedicated to creating exceptional digital
       experiences that harmoniously combine functionality and design.
     </p>
-    <div class="sobreMy__downloadCV" (click)="descargarPDF()">View CV</div>
+
+    <div class="sobreMy__container-buttons">
+      <div class="sobreMy__container-buttons__viewCV" (click)="openPdfInNewWindow()">View CV</div>
+      <div class="sobreMy__container-buttons__downloadCV" (click)="descargarPDF()">
+        <mat-icon>picture_as_pdf</mat-icon>
+      </div>
+    </div>
+
   </div>
 </div>

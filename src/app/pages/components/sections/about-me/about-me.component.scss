@@ -69,21 +69,43 @@
     }
   }
 
-  &__downloadCV {
-    width: 100%;
-    margin: auto;
-    background-color: var(--grey);
-    padding: 5px;
-    text-align: center;
-    cursor: pointer;
-    user-select: none;
-    border-radius: 12px;
-    color: var(--background--dark-grey);
+  &__container-buttons{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2%;
+    &__viewCV {
+      width: 90%;
+      margin: auto;
+      background-color: var(--grey);
+      padding: 5px;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+      border-radius: 12px;
+      color: var(--background--dark-grey);
+    }
+    &__viewCV:hover {
+      background-color: var(--white);
+      color: var(--background--dark-grey);
+    }
+    &__downloadCV {
+      width: 10%;
+      margin: auto;
+      background-color: var(--grey);
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+      border-radius: 12px;
+      color: var(--background--dark-grey);
+    }
+    &__downloadCV:hover {
+      box-shadow: 0 0 15px red;
+    }
   }
-  &__downloadCV:hover {
-    background-color: var(--white);
-    color: var(--background--dark-grey);
-  }
+
+
+
 }
 
 .title {
