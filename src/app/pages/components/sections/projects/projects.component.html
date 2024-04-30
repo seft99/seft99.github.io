@@ -1,0 +1,58 @@
+<div class="main-section3">
+  <div class="title">Project</div>
+  <div class="main-section3__cards-container">
+    <div
+      *ngFor="let project of projects"
+      class="main-section3__cards-container__card-project"
+    >
+      <div
+        class="main-section3__cards-container__card-project__container-project-img-herramientas"
+      >
+        <div
+          class="main-section3__cards-container__card-project__container-project-img-herramientas__projectImg-container"
+        >
+          <img
+            class="main-section3__cards-container__card-project__container-project-img-herramientas__projectImg-container__img-project"
+            [src]="project.img"
+          />
+        </div>
+        <div class="container-settings">
+          <div *ngFor="let setting of project.herramientas">
+            <img class="img-setting" [src]="setting" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-section3__cards-container__card-project__project-text-button-container"
+      >
+        <div
+          class="main-section3__cards-container__card-project__project-text-container"
+        >
+          <div
+            class="main-section3__cards-container__card-project__project-text-container__project-name-container"
+          >
+            <div
+              class="main-section3__cards-container__card-project__project-text-container__project-name-container__project-name"
+            >
+              {{ project.name }}
+            </div>
+          </div>
+          <div
+            class="main-section3__cards-container__card-project__project-text-container__project-name-container"
+          >
+            <div
+              class="main-section3__cards-container__card-project__project-text-container__project-description overflow-active"
+            >
+              {{ project.description }}
+            </div>
+          </div>
+        </div>
+        <div
+          class="main-section3__cards-container__card-project__button-seeMore"
+        >
+          Know more
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

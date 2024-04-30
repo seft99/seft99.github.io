@@ -1,0 +1,82 @@
+
+<div class="main">
+  <header class="toolbar-container" id="toolbarContainer">
+    <app-toolbar />
+  </header>
+  <section>
+    <app-front-page />
+  </section>
+  <app-separator />
+  <section id="section1">
+    <app-about-me />
+  </section>
+  <app-separator />
+  <section id="section2">
+    <app-skills />
+  </section>
+  <app-separator />
+  <section id="section3">
+    <app-projects />
+  </section>
+  <app-separator />
+  <section id="section4">
+    <div class="main__container-xpStudies">
+      <app-experience /> <app-studies />
+    </div>
+  </section>
+  <footer>
+    <app-footer />
+  </footer>
+  <div class="main__container-bookmarks">
+    <div class="tooltip">
+      <div
+        class="main__container-bookmarks__container-option"
+        (click)="scrollToSection('section1')"
+      >
+        <mat-icon class="icon">person</mat-icon>
+      </div>
+      <span class="tooltiptext">About me</span>
+    </div>
+    <div class="tooltip">
+      <div
+        class="main__container-bookmarks__container-option"
+        (click)="scrollToSection('section4')"
+      >
+        <mat-icon class="icon">work_outline</mat-icon>
+      </div>
+      <span class="tooltiptext">Experience</span>
+    </div>
+    <div class="main__container-bookmarks__line"></div>
+    <div class="tooltip">
+      <div
+        class="main__container-bookmarks__container-option"
+        (click)="scrollToSection('section2')"
+      >
+        <mat-icon class="icon">menu_book</mat-icon>
+      </div>
+      <span class="tooltiptext">Skills</span>
+    </div>
+
+    <div class="tooltip">
+      <div
+        class="main__container-bookmarks__container-option"
+        (click)="scrollToSection('section3')"
+      >
+        <mat-icon class="icon">computer</mat-icon>
+      </div>
+      <span class="tooltiptext">Projects</span>
+    </div>
+    <div class="main__container-bookmarks__line"></div>
+    <div class="tooltip">
+      <div
+        class="main__container-bookmarks__container-option"
+        (click)="toggleTheme()"
+      >
+        <mat-icon class="icon" *ngIf="!state">wb_sunny</mat-icon>
+        <mat-icon class="icon" *ngIf="state">brightness_2</mat-icon>
+      </div>
+      <span class="tooltiptext" *ngIf="!state">Light</span>
+      <span class="tooltiptext" *ngIf="state">Dark</span>
+    </div>
+  </div>
+</div>

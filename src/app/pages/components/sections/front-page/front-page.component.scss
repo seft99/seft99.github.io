@@ -1,0 +1,136 @@
+.container-img-portada {
+  width: 75%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  &__background-img {
+    padding: 1% 0px;
+    height: max-content;
+    width: 100%;
+    background-color: var(--black);
+    box-shadow: 16px 14px 20px #0000008c;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    &__container-img {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      &__img-portada {
+        max-width: 40%;
+        z-index: 10;
+      }
+      &__container-right-img {
+        display: flex;
+        width: 95%;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 11;
+        &__img-circulos {
+          max-width: 100%;
+          z-index: 11;
+        }
+        &__title-portada {
+          color: white;
+          font-size: 15vw;
+          position: absolute;
+          display: flex;
+          margin-bottom: 22%;
+          margin-left: 30%;
+          z-index: 20;
+          font-family: "Abolition";
+          &__color {
+            font-size: 15vw;
+            color: gray;
+            font-family: "Abolition";
+          }
+        }
+        &__name-Charge {
+          font-size: 1.2vw;
+          position: absolute;
+          display: flex;
+          margin-bottom: -3%;
+          margin-left: 36%;
+          color: white;
+          &__charge {
+            font-size: 1.2vw;
+            color: orange;
+          }
+        }
+
+        &__botton-contact {
+
+          animation: changeColor 10s infinite;
+          animation-timing-function: ease;
+          width: max-content;
+          height: 2vw;
+          font-weight: 700;
+          right: 9%;
+          position: absolute;
+          bottom: 35%;
+          border-radius: 12px;
+          cursor: pointer;
+          user-select: none;
+          z-index: 15;
+          transition: all 0.2s ease-in-out;
+          box-shadow: 2px 2px 2px var(--background--dark-grey);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &__text-button{
+            color: white;
+            font-size: 1vw;
+            margin: 0 2vw;
+          }
+        }
+        &__botton-contact:hover{
+          border-radius: 12px;
+          transform: scale(1.2);
+          z-index: 15;
+        }
+      }
+    }
+  }
+  &__background-img::before {
+    content: "";
+    position: absolute;
+    height: 200vw;
+    width: 200vw;
+    background-image: conic-gradient(var(--white) 20deg, transparent 120deg);
+    animation: rotar 5s linear infinite;
+  }
+  &__background-img::after {
+    content: "";
+    position: absolute;
+    height: 95%;
+    width: 97%;
+    background-color: #101010;
+
+    box-shadow: inset 16px 14px 20px #0000008c;
+  }
+}
+
+@keyframes changeColor {
+  0% { background-color: orange; }
+  10% { background-color: red; }
+  25% { background-color: red; }
+  50% { background-color: blue; }
+  50% { background-color: blue; }
+  75% { background-color: orange; }
+  100% { background-color: orange; }
+}
+
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

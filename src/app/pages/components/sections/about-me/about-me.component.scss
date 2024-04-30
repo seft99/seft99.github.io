@@ -1,0 +1,115 @@
+.sobreMy {
+  margin: auto;
+  max-width: 75%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__grid-container{
+    max-width: 45%;
+    max-height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    &__avatar{
+      animation: moveUpDown 2s infinite;
+      width: 12rem;
+    }
+    &__img-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 20px;
+      &__img1{
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        margin-left: 40%
+      }
+      &__img2{
+        @extend .sobreMy__grid-container__img-grid__img1;
+        justify-content: left;
+        margin-left:0;
+      }
+
+      &__img-perfil1 {
+        grid-area: 1 / 1 / 5 / 2;
+      }
+      &__img-perfil2 {
+        grid-area: 3 / 2 / 5 / 4;
+
+      }
+      &__img-perfil3 {
+        grid-area: 1 / 2 / 3 / 4;
+
+      }
+    }
+  }
+
+
+
+
+  &__description-container {
+    color: var(--white);
+    width: 40%;
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    gap: 20px;
+
+    &__description {
+      font-family: "LeagueSpartanregular";
+    }
+  }
+
+  &__downloadCV {
+    width: 100%;
+    margin: auto;
+    background-color: var(--grey);
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 12px;
+    color: var(--background--dark-grey);
+  }
+  &__downloadCV:hover {
+    background-color: var(--white);
+    color: var(--background--dark-grey);
+  }
+}
+
+.title {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+@keyframes moveUpDown {
+  0% { transform: translateY(0); } /* Posición inicial */
+  50% { transform: translateY(15px); } /* Posición intermedia (abajo) */
+  100% { transform: translateY(0); } /* Posición final (vuelve arriba) */
+}
+
+@media (max-width: 800px) {
+  .sobreMy {
+    flex-direction: column;
+    gap: 20px;
+    .sobreMy__img-perfil {
+      width: 100%;
+    }
+    .sobreMy__description-container {
+      width: 100%;
+    }
+    .sobreMy__grid-container{
+      display: none;
+    }
+  }
+}

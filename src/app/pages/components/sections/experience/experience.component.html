@@ -1,0 +1,54 @@
+<div class="main">
+  <div class="main__title">
+    Experience
+  </div>
+  <div class="main__org-top" *ngFor="let experience of experiences">
+    <div class="main__org-top__containcer-logoInfo">
+      <img
+        class="main__org-top__containcer-logoInfo__logo"
+        [src]="experience.orgLogo"
+      />
+      <div class="main__org-top__containcer-logoInfo__container-nameDuration">
+        <div
+          class="main__org-top__containcer-logoInfo__container-nameDuration__name"
+        >
+          {{ experience.orgName }}
+        </div>
+        <div
+          class="main__org-top__containcer-logoInfo__container-nameDuration__duration"
+        >
+          {{ experience.totalDuration }}
+        </div>
+      </div>
+    </div>
+    <div *ngFor="let item of experience.experiences">
+      <div class="main__org-top_container-xpBranch">
+        <div class="main__org-top_container-xpBranch__container-branch">
+          <div
+            class="main__org-top_container-xpBranch__container-branch__point"
+          ></div>
+          <div
+            class="main__org-top_container-xpBranch__container-branch__line"
+          ></div>
+        </div>
+        <div class="main__org-top_container-xpBranch__container-info">
+          <div class="main__org-top_container-xpBranch__container-info__charge">
+            {{item.cargo}}
+          </div>
+          <div class="main__org-top_container-xpBranch__container-info__container-dateEnd">
+            <div class="main__org-top_container-xpBranch__container-info__container-dateEnd__date">
+              {{item.fechaInicioFin}}
+            </div>
+            <div class="main__org-top_container-xpBranch__container-info__container-dateEnd__point"></div>
+            <div class="main__org-top_container-xpBranch__container-info__container-dateEnd__date">
+              {{item.duration}}
+            </div>
+          </div>
+          <div class="main__org-top_container-xpBranch__container-info__container-dateEnd__date">
+            {{item.place}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

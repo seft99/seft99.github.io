@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Monserrat";
+}
+
+@font-face {
+  font-family: "Monserrat";
+  src: url("./assets/fonts/static/monserrat/Montserrat-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "LeagueSpartanregular";
+  src: url("./assets/fonts/static/monserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Abolition";
+  src: url("./assets/fonts/static/abolition/AbolitionTest-Regular.otf");
+}
+:root {
+  --background--dark-grey: #171717;
+  --line-modal: #171717;
+  --grey: grey;
+  --white: white;
+  --black: black;
+  --color-green: #00a878;
+  --color-red: #fe5e41;
+  --color-button: #fdffff;
+  --color-black: #000;
+  --grey-modal: grey;
+  --bockmark-option:rgb(55, 55, 55, 1);
+  --background-gradient-dark: linear-gradient(90deg, rgba(48,48,48,1) 0%, rgba(13,13,13,1) 15%, rgba(0,0,0,1) 50%, rgba(13,13,13,1) 85%, rgba(48,48,48,1) 100%);
+}
+
+.light {
+  --background--dark-grey: white;
+  --black: white;
+  --white: black;
+  --grey-modal: white;
+  --grey: grey;
+  --bockmark-option:#e4dbdb;
+  --background-gradient-dark:white;
+}

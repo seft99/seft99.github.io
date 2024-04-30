@@ -1,0 +1,106 @@
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+a:link {
+  color: var(--white);
+}
+a:visited {
+  color: var(--white);
+}
+a:focus {
+  border-bottom: 1px solid;
+}
+a:hover {
+  border-bottom: 1px solid;
+}
+
+a:active {
+  background: gray;
+  color: var(--white);
+}
+.modal {
+  max-width: 40rem;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: var(--background--dark-grey);
+  &__sup {
+    gap: 1rem;
+    width: 100%;
+    height: 2rem;
+    border-bottom: 2px solid var(--white);
+    display: flex;
+    user-select: none;
+    &__title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+    &__icon {
+      display: flex;
+      color: var(--white);
+      vertical-align: bottom;
+    }
+  }
+  &__body {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+    &__body-left {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      &__input {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+        &__text {
+          display: flex;
+          flex-direction: row;
+          font-size: 14px;
+          color: var(--white);
+          width: max-content;
+          gap: 5px;
+        }
+      }
+      &__nameInput {
+        font-size: 12px;
+        z-index: 1000;
+        bottom: 16px;
+        color: var(--white);
+        left: 9px;
+        width: max-content;
+      }
+      &__buttonEmailContainer {
+        &__text {
+          font-size: 10px;
+          font-weight: 700;
+          color: var(--white);
+        }
+      }
+    }
+    &__body-right {
+      align-items: center;
+      justify-content: center;
+      width: 47%;
+      display: flex;
+      &__img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .modal__body__body-right {
+    display: none;
+  }
+}

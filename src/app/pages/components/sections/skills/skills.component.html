@@ -1,0 +1,21 @@
+<div class="skills-main-container">
+  <p class="title">Skills</p>
+  <div class="skills-main-container__main-cardContainer">
+    <div  class="skills-main-container__main-cardContainer__card-container" *ngFor="let techName  of technologyNames">
+      <div class="skills-main-container__main-cardContainer__card-container__card-title"  [ngClass]="{
+        'skills-main-container__main-cardContainer__card-container__card-title__color1': technologies[techName].typeId === 0,
+        'skills-main-container__main-cardContainer__card-container__card-title__color2': technologies[techName].typeId === 1,
+        'skills-main-container__main-cardContainer__card-container__card-title__color3': technologies[techName].typeId === 2,
+        'skills-main-container__main-cardContainer__card-container__card-title__color4': technologies[techName].typeId === 3
+      }"> {{ technologies[techName ].name }}</div>
+      <div class="skills-main-container__main-cardContainer__card-container__card-line"></div>
+      <div class="skills-main-container__main-cardContainer__card-container__card-body">
+        <div class="skills-main-container__main-cardContainer__card-container__card-body_skill-container" *ngFor="let skill of technologies[techName].skills">
+          <img class="skills-main-container__main-cardContainer__card-container__card-body_skill-container__skill-img" [src]="skill.img">
+          <div class="skills-main-container__main-cardContainer__card-container__card-body_skill-container__skill-name">{{skill.name}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
