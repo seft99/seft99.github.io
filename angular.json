@@ -19,7 +19,7 @@
           "options": {
             "outputPath": "dist/",
             "index": "src/index.html",
-            "main": "src/",
+            "main": "src/main.ts",
             "baseHref": "/",
             "polyfills": [
               "zone.js"
