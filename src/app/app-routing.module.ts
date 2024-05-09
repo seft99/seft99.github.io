@@ -5,12 +5,12 @@ import { SPAComponent } from './pages/components/spa/spa.component';
 const routes: Routes = [
 {
   path: '',
-  redirectTo:'',
+  redirectTo:'/main',
   pathMatch:'full'
 
 },
 {
-path:'',
+path:'main',
 component:SPAComponent,
 }
 

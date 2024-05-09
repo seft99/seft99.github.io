@@ -17,10 +17,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/portfolio",
+            "outputPath": "dist/portafolio-seft",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "baseHref": "/",
             "polyfills": [
               "zone.js"
             ],
