@@ -5,13 +5,10 @@ import { SPAComponent } from './pages/components/spa/spa.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/spa',
-    pathMatch: 'full'
-  },
-  {
-    path: 'spa',
+    pathMatch: 'full',
     component: SPAComponent,
-  }
+  },
+
 ];
 
 @NgModule({
