@@ -90,7 +90,7 @@ background: var(--background-gradient-dark);
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .main__container-bookmarks {
     width: 30%;
     height: 1.5rem;
@@ -101,13 +101,32 @@ background: var(--background-gradient-dark);
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 900px) {
+  .main__container-bookmarks {
+    width: 36%;
+    height: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main__container-bookmarks {
+    width: 40%;
+    height: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
   .main__container-bookmarks {
     width: 50%;
     height: 1.5rem;
   }
 }
-
+@media (max-width: 450px) {
+  .main__container-bookmarks {
+    width: 60%;
+    height: 1.5rem;
+  }
+}
 .tooltip {
   position: relative;
   display: inline-block;

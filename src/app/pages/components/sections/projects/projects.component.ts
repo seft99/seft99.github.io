@@ -16,24 +16,53 @@ export class ProjectsComponent {
       name: 'Phoenix Game',
       img: '../../../../../assets/img/projects/logo-Phoenix.jpeg',
       description:
-        'Phoenix Game es una plataforma de videojuegos que ofrece una amplia biblioteca de juegos para entusiastas y jugadores ávidos. Con una interfaz intuitiva y atractiva, los usuarios pueden explorar una variedad de juegos, cada uno con su propia página de detalles que incluye imágenes, descripciones detalladas, calificaciones de usuarios, comentarios y más.',
+        'Phoenix Game is a gaming platform that offers a vast library of games for enthusiasts and avid gamers. With an intuitive and attractive interface, users can explore a variety of games, each with its own details page that includes images, detailed descriptions, user ratings, comments and more.',
       herramientas:[
         '../../../../../assets/img/logo-tools/JavaScript-logo.png',
         '../../../../../assets/img/logo-tools/angular_logo_icon_169595.png',
         '../../../../../assets/img/logo-tools/Figma-1-logo.png',
-      ]
+        '../../../../../assets/img/logo-tools/jasmine.png',
+      ],
+      url:'https://github.com/seft99/videoGames-Proyect',
       },
       {
         name: 'SF Bank App',
         img: '../../../../../assets/img/projects/SFBANK.jpeg',
         description:
-          'La aplicación SF Bank es una plataforma digital que ofrece información y servicios bancarios a sus clientes. Con un diseño intuitivo y fácil de usar, los usuarios pueden acceder a información sobre los productos y servicios ofrecidos por SF Bank, así como a herramientas útiles para gestionar sus finanzas de manera efectiva.',
+          'SF Bank App is a digital platform that offers banking information and services to its customers. With an intuitive and easy-to-use design, users can access information about the products and services offered by SF Bank, as well as useful tools to manage their finances effectively.',
         herramientas:[
           '../../../../../assets/img/logo-tools/JavaScript-logo.png',
           '../../../../../assets/img/logo-tools/angular_logo_icon_169595.png',
           '../../../../../assets/img/logo-tools/Figma-1-logo.png',
-        ]
+        ],
+        url:'https://github.com/seft99/JSbank',
         },
-       
+        {
+          name: 'LifeBeat',
+          img: '../../../../../assets/img/projects/lifeBeat.jpeg',
+          description:
+            'The Life Beat web application was developed based on the functionalities of the software platform for machine learning and data mining Weka, using the J48 classification algorithm. This algorithm is based on decision trees, so it is very efficient in the prediction processes that want to reach a final decision. Life Beat is an application developed in the Java programming language, using the libraries provided by Weka to read, add and display data based on a given dataset (Heart Clean).',
+          herramientas:[
+            '../../../../../assets/img/logo-tools/JavaScript-logo.png',
+            '../../../../../assets/img/logo-tools/angular_logo_icon_169595.png',
+            '../../../../../assets/img/logo-tools/Figma-1-logo.png',
+
+          ],
+          url:'https://github.com/seft99/LifeBeat',
+          },
+          {
+            name: 'Aldea',
+            img: '../../../../../assets/img/projects/Aldea.jpeg',
+            description:
+              'I have been working for more than 1 and a half years at the company Zabud Technologies SAS on the village project which allows its users to organize, execute, control and analyze their strategies more efficiently. Maximizing the potential of your business and make informed decisions with our state-of-the-art tool.',
+            herramientas:[
+              '../../../../../assets/img/logo-tools/JavaScript-logo.png',
+              '../../../../../assets/img/logo-tools/angular_logo_icon_169595.png',
+              '../../../../../assets/img/logo-tools//sass-5.png',
+              '../../../../../assets/img/logo-tools/jasmine.png',
+              '../../../../../assets/img/logo-tools/karma.png',
+            ],
+            url:'https://www.zabud.com.co/',
+            },
   ];
 }
