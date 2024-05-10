@@ -104,3 +104,14 @@ a:active {
     display: none;
   }
 }
+@media (max-width: 430px) {
+  .modal__sup__title {
+    font-size: 1rem;
+  }
+  .modal__body__body-left__input__text {
+    font-size: 10px;
+  }
+  .modal__body__body-left {
+    gap: 1rem;
+  }
+}
