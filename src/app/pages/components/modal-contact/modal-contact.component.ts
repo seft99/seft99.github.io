@@ -12,4 +12,8 @@ import { ImportsMaterialModule } from 'src/app/shared/imports-material/imports-m
 })
 export class ModalContactComponent {
   constructor(private dialogRef: MatDialogRef<ModalContactComponent>) {}
+
+  closeModal(){
+    this.dialogRef.close();
+  }
 }
