@@ -99,6 +99,15 @@
   .skills-main-container__main-cardContainer__card-container{
     height: max-content;
   }
+  .skills-main-container__main-cardContainer__card-container__card-body_skill-container{
+    justify-content: space-evenly;
+  }
+}
+
+@media(max-width:405px){
+  .skills-main-container__main-cardContainer__card-container__card-body_skill-container__skill-name{
+    font-size: 11px;
+  }
 }
 
 @media(max-width:360px){

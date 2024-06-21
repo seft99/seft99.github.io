@@ -124,6 +124,37 @@ export class SkillsComponent {
           type: 'tools',
           icon: 'bug_report',
         },
+        {
+          name: 'Jira',
+          img: '../../../../../assets/img/logo-tools/atlassian_jira_logo_icon_170511.png',
+          type: 'tools',
+          icon: 'bug_report',
+        },
+        {
+          name: 'JSON-server',
+          img: '../../../../../assets/img/logo-tools/json-server.png',
+          type: 'tools',
+          icon: 'bug_report',
+        },
+        {
+          name: 'Bitbucket',
+          img: '../../../../../assets/img/logo-tools/bitBucket.png',
+          type: 'tools',
+          icon: 'bug_report',
+        },
+        {
+          name: 'KEYCLOAK',
+          img: '../../../../../assets/img/logo-tools/Keycloak_Logo.png',
+          type: 'tools',
+          icon: 'bug_report',
+        },
+        {
+          name: 'Trello',
+          img: '../../../../../assets/img/logo-tools/Trello_icon-icons.com_66775.png',
+          type: 'tools',
+          icon: 'bug_report',
+        },
+
       ],
     },
   };

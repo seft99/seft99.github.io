@@ -63,9 +63,10 @@
     height: 400px;
     flex-direction: column;
     gap: 20px;
-
+    justify-content: space-between;
     &__description {
       font-family: "LeagueSpartanregular";
+      line-height: 1.8;
     }
   }
 

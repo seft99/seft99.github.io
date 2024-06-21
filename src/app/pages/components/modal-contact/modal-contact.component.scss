@@ -35,6 +35,12 @@ a:active {
     border-bottom: 2px solid var(--white);
     display: flex;
     user-select: none;
+    justify-content: space-between;
+    &__sup-left{
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+    }
     &__title {
       font-size: 1.5rem;
       font-weight: 700;
@@ -44,6 +50,13 @@ a:active {
       display: flex;
       color: var(--white);
       vertical-align: bottom;
+    }
+    &__iconX {
+      display: flex;
+      color: var(--white);
+      vertical-align: bottom;
+      cursor: pointer;
+      user-select: none;
     }
   }
   &__body {
@@ -102,5 +115,20 @@ a:active {
 @media (max-width: 600px) {
   .modal__body__body-right {
     display: none;
+  }
+}
+@media (max-width: 470px) {
+  .modal__sup__title {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 430px) {
+
+  .modal__body__body-left__input__text {
+    font-size: 10px;
+  }
+  .modal__body__body-left {
+    gap: 1rem;
   }
 }

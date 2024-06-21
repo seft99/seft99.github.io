@@ -50,7 +50,11 @@
         <div
           class="main-section3__cards-container__card-project__button-seeMore"
         >
-          Know more
+          <a [href]="project.url" target="_blank">
+            <p *ngIf="project.name === 'Aldea'">Zabud</p>
+            <p *ngIf="project.name !== 'Aldea'">Code</p>
+            </a
+          >
         </div>
       </div>
     </div>
