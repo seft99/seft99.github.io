@@ -17,16 +17,11 @@ export class ExperienceComponent {
       orgName:'ZABUD technologies',
       orgLogo:'https://media.licdn.com/dms/image/C560BAQFcXdXUkiiZfg/company-logo_200_200/0/1630668329814/zabudtechnologies_logo?e=2147483647&v=beta&t=Ogx7I1SEG3UgZRHW9Y-x6p177ujf53gEIYLVoyAb4VE',
       totalDuration:'1 year and 3 months',
-      experiences : [{
-        cargo:'Front-end Intern',
-        fechaInicioFin:'feb 2023 - aug 2023',
-        duration:'7 months',
-        place:'Colombia',
-      },
+      experiences : [
       {
         cargo:'Junior Front-end Developer',
-        fechaInicioFin:'ago 2023 - present',
-        duration:'9 months',
+        fechaInicioFin:'07 feb 2023 - present',
+        duration:'1 year and 5 months',
         place:'Colombia',
       }
 

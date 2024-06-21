@@ -21,7 +21,9 @@ section {
   display: flex;
   flex-direction: column;
   height: max-content;
-background: var(--background-gradient-dark);
+  background: var(--background-gradient-dark);
+  background-size: cover;
+  background-repeat: no-repeat;
   &__container-bookmarks {
     position: -webkit-sticky;
     position: sticky;
@@ -66,14 +68,13 @@ background: var(--background-gradient-dark);
     }
   }
 
-
   &__title {
     color: var(--white);
     font-weight: 700;
     font-size: 1.5rem;
   }
 
-  &__container-xpStudies{
+  &__container-xpStudies {
     width: 80%;
     margin: auto;
     display: flex;
@@ -82,21 +83,19 @@ background: var(--background-gradient-dark);
   }
 }
 
-@media(max-width:750px){
-  .main__container-xpStudies{
+@media (max-width: 750px) {
+  .main__container-xpStudies {
     flex-direction: column;
     gap: 2rem;
   }
 }
 
-
 @media (max-width: 800px) {
   .main__container-bookmarks {
     width: 30%;
     height: 1.5rem;
-
   }
-  .main__container-bookmarks__container-option:hover{
+  .main__container-bookmarks__container-option:hover {
     transform: scale(1.3);
   }
 }
